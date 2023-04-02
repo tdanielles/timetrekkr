@@ -3,6 +3,11 @@
     transition: 0.3s ease;
 }
 
+.clickable-img {
+    border: 5px solid #ffeaa8;
+    border-radius: 20px;
+}
+
 .info-box {
     background-color: rgb(235, 235, 214);
     position:fixed; 
@@ -35,7 +40,7 @@ p {
     color: blue;
 }
 
-button {
+.App button {
     border: 1px solid black;
     border-radius: 12px;
     padding: 5px 10px;
@@ -44,7 +49,7 @@ button {
     font-size: 20px;
 }
 
-button:hover {
+.App button:hover {
     background-color: black;
     color: white;
     transition: 0.3s ease;
