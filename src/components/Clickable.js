@@ -2,7 +2,7 @@ import '../styles/Clickable.css';
 import { useState } from 'react';
 
 function Clickable(props) {
-    const { imgUrl, desc, learnmore, isOneClicked, setRestriction } = props;
+    const { imgUrl, desc, learnmore, isOneClicked, setRestriction, xOffset, yOffset } = props;
     const [clicked, setClicked] = useState(false);
 
     // OpenAI stuff
@@ -67,13 +67,13 @@ function Clickable(props) {
         }
         let voices = window.speechSynthesis.getVoices();
         msg.voice = voices[7]; // 0 (boring guy), 7 (british guy), 10 (lady but with little bit of accent), 11 (old guy), 17 (british lady), 28 (lady), 33 (lady), 37, 49-51 good but cuts off
-        msg.pitch = 2;
+        msg.pitch = 1.2;
         window.speechSynthesis.speak(msg);
     }
 
 
     return(
-        <div className="Clickable">
+        <div className="Clickable" style={{position: "absolute", left: `${xOffset}px`, top: `${yOffset}px`}}>
             <img className="clickable-img" src={imgUrl} onClick={displayInfoBox}/>
             {clicked && <div className="info-box">
                 {apiResponse !== "" ?  apiResponse : desc}
