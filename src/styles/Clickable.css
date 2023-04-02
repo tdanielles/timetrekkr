@@ -37,11 +37,12 @@ p {
 }
 
 .emphasis:hover {
-    color: blue;
+    color: #5d5e9e;
 }
 
 .App button {
-    border: 1px solid black;
+    border: 2px solid #5d5e9e;
+    color: #5d5e9e;
     border-radius: 12px;
     padding: 5px 10px;
     font-family: "Comic Neue", cursive;
@@ -49,11 +50,20 @@ p {
     font-size: 20px;
 }
 
-.App button:hover {
-    background-color: black;
-    color: white;
+.App .fun-fact {
+    font-family: "Prompt";
+}
+
+.App .fun-fact:hover {
+    background-color: #5d5e9e;
+    color: #ffeaa8;
     transition: 0.3s ease;
-    transform: scale(1.2);
+}
+
+.App .buttons button:hover {
+    background-color: #5d5e9e;
+    color: #ffeaa8;
+    transition: 0.3s ease;
 }
 
 .buttons {
