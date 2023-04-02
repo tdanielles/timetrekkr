@@ -13,7 +13,7 @@
     margin: auto;
     width: 500px;
     height: 600px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     z-index: 5;
     font-size: 25px;
@@ -31,16 +31,31 @@ p {
     cursor: pointer;
 }
 
+.emphasis:hover {
+    color: blue;
+}
+
 button {
     border: 1px solid black;
     border-radius: 12px;
     padding: 5px 10px;
     font-family: "Comic Neue", cursive;
     background: none;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+    transform: scale(1.2);
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 40px;
 }
