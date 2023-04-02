@@ -1,0 +1,76 @@
+.App {
+  background-image: url("/public/images/egypt.png");
+  height: 7329px;
+  font-family: "Comic Neue", cursive;
+}
+
+.mini-navbar {
+  background-color: #f5e2a4;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px 0px 100px;
+}
+
+.mini-navbar .music {
+  border: none;
+  background: transparent;
+}
+
+.mini-navbar .music img {
+  height: 40px;
+  width: 40px;
+}
+
+.mini-navbar .music img:hover {
+  background-color: transparent !important;
+}
+
+.mini-navbar h1 {
+  margin: 0;
+  font-family: "Prompt";
+  color: #57513a;
+}
+
+.mini-navbar .right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading-bg {
+  height: 100vh;
+  background-image: linear-gradient(to right, #f5e2a4 20%, #5d5e9e 100%);
+  display: flex;
+  align-items: center;
+}
+
+.fun-fact-box {
+  background-color: rgb(235, 235, 214);
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  z-index: 5;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fun-fact-box button {
+  width: 200px;
+}
+
+.fun-fact-box .buttons {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+}

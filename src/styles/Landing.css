@@ -1,0 +1,101 @@
+.Landing {
+    font-family: "Prompt", sans-serif;
+    background-image: linear-gradient(to right, #f5e2a4 20%, #5d5e9e 100%);
+    height: 100vh;
+    color: #454576;
+}
+
+.Landing button {
+    font-family: "Prompt", sans-serif;
+}
+
+.Landing .navbar {
+    display: flex;
+    justify-content:space-between;
+    padding: 50px 150px 0px 150px;
+}
+
+.Landing .mid-nav {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-text {
+    font-size: 20px;
+}
+
+.Landing .right-nav button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #ead181;
+    color: #ead181;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.Landing .right-nav button:hover {
+    background-color: #ead181;
+    border: 2px solid transparent;
+    color: #454576;
+    transition: 0.3s ease;
+}
+
+.Landing .hero-title {
+    font-size: 50px;
+    font-weight:bolder;
+}
+
+.hero {
+    display: flex;
+    padding: 100px 150px 100px 150px;
+    gap: 80px;
+}
+
+.hero img {
+    width: 400px;
+}
+
+.sub {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.Landing .hero button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #454576;
+    color: #454576;
+    background-color: transparent;
+    width: 150px;
+    font-weight: 500;
+}
+
+.Landing .hero .hero-title {
+    margin-bottom: 0;
+}
+
+.Landing .hero button:hover {
+    background-color: #454576;
+    border: 2px solid transparent;
+    color: #ead181;
+    transition: 0.3s ease;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 550px;
+}
+
+.navbar .logo {
+    width: 100px;
+    height: 60px;
+}

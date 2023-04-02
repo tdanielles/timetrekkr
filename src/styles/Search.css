@@ -1,0 +1,34 @@
+.Search input {
+    padding: 15px 20px;
+    width: 350px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-family: "Prompt";
+    color: #454576;
+}
+
+.Search form {
+    display: flex;
+}
+.Search img {
+    width: 55px;
+    height: 55px;
+}
+
+.Search img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.Search button {
+    background: none;
+    border:none;
+}
+
+
+.Search {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
