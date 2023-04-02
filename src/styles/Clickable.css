@@ -1,0 +1,46 @@
+.clickable-img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.info-box {
+    background-color: rgb(235, 235, 214);
+    position:fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 5;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 10px 0px 3px 0px;
+}
+
+.emphasis {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-family: "Comic Neue", cursive;
+    background: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
