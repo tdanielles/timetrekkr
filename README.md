@@ -1,4 +1,4 @@
-# timetrekkr
+# timetrekkr 🏆 2nd Place @ ProduHacks 2023 🏆
 > An interactive storyboard for kids!
 
 ## Inspiration
