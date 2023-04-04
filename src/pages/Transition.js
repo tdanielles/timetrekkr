@@ -31,14 +31,14 @@ function Transition() {
 
     return (
         <div className="Transition">
-            <p className="company">timetrekkr.ai</p>
+            <img className="logo-trans" src="images/logo.png"/>
             <div className="trans-main">
                 <div className="trans-left">
                     <h1>Where will you go? Explore and find out!</h1>
                     <Search handleMoreStuff={handleMoreStuff} link={link} setLink={setLink}/>
                     { error ? <p className="error">Country doesn't exist in our database!</p> : ""}
                 </div>
-                <img src="images/bookshelf.png"/>
+                <img className="bookshelf" src="images/bookshelf.png"/>
             </div>
             
             

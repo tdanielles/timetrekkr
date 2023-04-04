@@ -9,8 +9,7 @@ function Landing() {
                     <img className="logo" src="images/logo.png"/>
                 </div>
                 <div className="mid-nav">
-                    <p className="nav-text">about</p>
-                    <p className="nav-text">features</p>
+                    <HashLink to="#about"><p className="nav-text">features</p></HashLink>
                     <p className="nav-text">pricing</p>
                 </div>
                 <div className="right-nav">
@@ -26,6 +25,29 @@ function Landing() {
                         <HashLink to="/transition#"><button>Get started</button></HashLink>
                 </div>
                 <img src="/images/clock.png"/>
+                
+            </div>
+            <div className="about" id="about">
+                <div className="about-text">
+                    <h1 className="about-title">Our features</h1>
+                    <div className="card-container">
+                        <div className="card">
+                            <img src="images/time-travel.png"/>
+                            <h3>Journey through time.</h3>
+                            <p>Immerse your senses with a chronological visual adventure from past to present.</p>
+                        </div>
+                        <div className="card">
+                            <img src="images/interactive.png"/>
+                            <h3>Interactive and accessible UI.</h3>
+                            <p>Hover animations and clickable images foster curiosity, exploration, and engagement.</p>
+                        </div>
+                        <div className="card">
+                            <img src="images/fun-fact.png"/>
+                            <h3>Fun fact generator.</h3>
+                            <p>A fun fact a day keeps the kids coming back to play. AI-powered to never skip a beat.</p>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
             <footer>Made with ♡ by Team 8 at ProduHacks</footer>

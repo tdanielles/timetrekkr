@@ -1,18 +1,23 @@
 .Landing {
     font-family: "Prompt", sans-serif;
     background-image: linear-gradient(to right, #f5e2a4 20%, #5d5e9e 100%);
-    height: 100vh;
+    height: 100%;
     color: #454576;
+    padding: 20px 150px 50px 150px;
 }
 
+a {
+    text-decoration: none;
+    color: #454576;
+}
 .Landing button {
     font-family: "Prompt", sans-serif;
 }
 
 .Landing .navbar {
+    padding-top: 20px !important;
     display: flex;
     justify-content:space-between;
-    padding: 50px 150px 0px 150px;
 }
 
 .Landing .mid-nav {
@@ -48,8 +53,9 @@
 
 .hero {
     display: flex;
-    padding: 100px 150px 100px 150px;
     gap: 80px;
+    margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 .hero img {
@@ -89,13 +95,60 @@
     gap: 20px;
 }
 
-footer {
-    position: absolute;
-    bottom: 20px;
-    left: 550px;
-}
-
 .navbar .logo {
     width: 100px;
     height: 60px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: #454576;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 25%;
+    gap: 10px;
+    color:#ead181;
+    border-radius: 25px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card h3, .card p {
+    margin: 0;
+    text-align: center;
+}
+
+.about {
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+.about-title {
+    font-size: 50px;
+}
+.card h3 {
+    margin-top: 20px;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 0;
 }

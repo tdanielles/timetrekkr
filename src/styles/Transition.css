@@ -2,6 +2,9 @@
     font-family: "Prompt", sans-serif;
     background-image: linear-gradient(to right, #f5e2a4 20%, #5d5e9e 100%);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -19,12 +22,17 @@
 .trans-main {
     color: #5d5e9e;
     display: flex;
-    padding: 70px 150px 0px 150px;
+    padding: 20px 150px 0px 150px;
     align-items: center;
     gap: 60px;
 }
 
-.Transition img {
+.logo-trans {
+    width: 250px;
+    height: 125px;
+    padding-top: 70px;
+}
+.Transition .bookshelf {
     width: 600px;
     height: 300px;
 }
