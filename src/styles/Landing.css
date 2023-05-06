@@ -114,11 +114,13 @@ a {
     gap: 10px;
     color:#ead181;
     border-radius: 25px;
+    min-height: 250px;
 }
 
 .card:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card img {
@@ -151,4 +153,9 @@ a {
 footer {
     text-align: center;
     padding-bottom: 0;
+}
+
+.about span {
+    font-size: 15px;
+    font-weight: lighter;
 }

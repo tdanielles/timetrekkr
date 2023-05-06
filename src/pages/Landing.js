@@ -10,7 +10,7 @@ function Landing() {
                 </div>
                 <div className="mid-nav">
                     <HashLink to="#about"><p className="nav-text">features</p></HashLink>
-                    <p className="nav-text">pricing</p>
+                    <HashLink to="#pricing"><p className="nav-text">pricing</p></HashLink>
                 </div>
                 <div className="right-nav">
                     <HashLink to="/transition#"><button>try it out</button></HashLink>
@@ -45,6 +45,29 @@ function Landing() {
                             <img src="images/fun-fact.png"/>
                             <h3>Fun fact generator.</h3>
                             <p>A fun fact a day keeps the kids coming back to play. AI-powered to never skip a beat.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div className="about" id="pricing">
+                <div className="about-text">
+                    <h1 className="about-title">Get started for free.</h1>
+                    <div className="card-container">
+                        <div className="card">
+                            <h3>Free Sample Storyboard</h3>
+                            <h1>$0</h1>
+                            <p>One story that is publicly available to view on our website.</p>
+                        </div>
+                        <div className="card">
+                            <h3>Per Storyboard</h3>
+                            <h1>$3.99<span>/storyboard</span></h1>
+                            <p>Unlock a high quality storyboard from our library of stories.</p>
+                        </div>
+                        <div className="card">
+                            <h3>Monthly Subscription</h3>
+                            <h1>$12.99<span>/storyboard</span></h1>
+                            <p>Unlimited access to a continuously expanding library of storyboards.</p>
                         </div>
                     </div>
                 </div>

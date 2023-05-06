@@ -5,9 +5,9 @@ import Music from "../music.mp3";
 import { useEffect } from 'react';
 
 function Demo () {
-    //const [audio, setAudio] = useState(new Audio(Music));
-    const [isOneClicked, setOneClicked] = useState(false);
+  const [isOneClicked, setOneClicked] = useState(false);
   const [funFactClicked, setFunFactClicked] = useState(false);
+  const [helpBtnClicked, setHelpBtnClicked] = useState(false);
   const [apiResponse, setApiResponse] = useState("");
   const [isMusicPlaying, setMusicState] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -34,6 +34,15 @@ function Demo () {
   const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  const showMusicBox = (e) => {
+      setHelpBtnClicked(true);
+      setApiResponse("How to navigate this storybook. Click on images with a yellow outlien to learn more about them! If you want to learn more about a topic, just click an underlined word, and it'll go more in depth on that particular topic! If you don't feel like reading, you can click on the 'Read To Me' button to have the computer read it out to you! There are also sounds and fun fact buttons on the upper right corner for you to play with!");
+  }
+
+  const hideMusicBox = (e) => {
+      setHelpBtnClicked(false);
+  }
 
   const generateFunFact = async (e) => {
     setFunFactClicked(true);
@@ -115,9 +124,32 @@ const speechHandler = (msg) => {
                   <button className='music' onClick={isMusicPlaying ? pause : play}>
                         <img src="images/audio.png"/>
                   </button>
-                  <button className='music'>
+                  <button className='music' onClick={showMusicBox}>
                         <img src="images/question.png"/>
+                        
                   </button>
+                  {helpBtnClicked && <div className='fun-fact-box'>
+                        <p><b>How to navigate this storybook</b></p>
+                        <div className='page-section'>
+                              <img className="outline" src="/images/chest.PNG"/>
+                              <p>Click on images with a yellow outline to learn more about them!</p>
+                        </div>
+                        <div className='page-section'>
+                              <img src="/images/underline.png"/>
+                              <p>If you want to learn more about a topic, just click an underlined word, and it'll go more in depth on that particular topic!</p>
+                        </div>
+                        <div className='page-section'>
+                              <img src="/images/readtome.png"/>
+                              <p>If you don't feel like reading, you can click on the "Read To Me" button to have the computer read it out to you!</p>
+                        </div>
+                        <div className='page-section'>
+                              <img src="/images/navbar.png"/>
+                              <p>There are also sounds and fun fact buttons on the upper right corner for you to play with!</p>
+                        </div>
+                        <div className='buttons'> 
+                              <button onClick={hideMusicBox}>Back</button>
+                              <button onClick={() => speechHandler(msg)}>Read To Me</button>
+                        </div></div>}
             </div>
             
             

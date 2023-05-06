@@ -25,12 +25,16 @@
 
 .mini-navbar .music img:hover {
   background-color: transparent !important;
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .mini-navbar h1 {
   margin: 0;
   font-family: "Prompt";
-  color: #57513a;
+  /*color: #57513a;*/
+  color:#5d5e9e;
 }
 
 .mini-navbar .right-side {
@@ -73,4 +77,21 @@
   display: flex;
   position: absolute;
   bottom: 40px;
+}
+
+.fun-fact-box .page-section {
+  display: flex;
+  font-size: 18px;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+}
+
+.fun-fact-box .outline {
+  border: 5px solid #ffeaa8;
+  border-radius: 20px;
+}
+
+.fun-fact-box img {
+  max-width: 120px;
 }
