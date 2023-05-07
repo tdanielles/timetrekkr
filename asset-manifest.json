@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/timetrekkr/static/css/main.1109b0ef.css",
-    "main.js": "/timetrekkr/static/js/main.9bdcd168.js",
+    "main.js": "/timetrekkr/static/js/main.d365217f.js",
     "static/media/music.mp3": "/timetrekkr/static/media/music.6487cef678e02cdd36e8.mp3",
     "static/media/egypt.png": "/timetrekkr/static/media/egypt.16cf3cd6d2685fb5aa35.png",
     "index.html": "/timetrekkr/index.html",
     "main.1109b0ef.css.map": "/timetrekkr/static/css/main.1109b0ef.css.map",
-    "main.9bdcd168.js.map": "/timetrekkr/static/js/main.9bdcd168.js.map"
+    "main.d365217f.js.map": "/timetrekkr/static/js/main.d365217f.js.map"
   },
   "entrypoints": [
     "static/css/main.1109b0ef.css",
-    "static/js/main.9bdcd168.js"
+    "static/js/main.d365217f.js"
   ]
 }
