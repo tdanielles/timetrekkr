@@ -24,7 +24,7 @@ function Landing() {
                         as interactive clickables to help children on their learning journey. Through our storybooks, we nurture children's sense of curiosity for history in a natural, exploratory manner.</p>
                         <HashLink to="/transition#"><button>Get started</button></HashLink>
                 </div>
-                <img src="/images/clock.png"/>
+                <img src="images/clock.png"/>
                 
             </div>
             <div className="about" id="about">
